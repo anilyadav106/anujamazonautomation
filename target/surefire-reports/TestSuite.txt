@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 33, Failures: 3, Errors: 0, Skipped: 30, Time elapsed: 1.108 s <<< FAILURE! - in TestSuite
+com.nagp.amazon.tests.AmazonLoginPageTest.setup  Time elapsed: 0.914 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.nagp.amazon.tests.AmazonLoginPageTest.setup(AmazonLoginPageTest.java:40)
+
+com.nagp.amazon.tests.AmazonHomePageTest.setup  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.nagp.amazon.tests.AmazonHomePageTest.setup(AmazonHomePageTest.java:40)
+
+com.nagp.amazon.tests.AmazonProductSearchResultsPageTest.setup  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.nagp.amazon.tests.AmazonProductSearchResultsPageTest.setup(AmazonProductSearchResultsPageTest.java:42)
+

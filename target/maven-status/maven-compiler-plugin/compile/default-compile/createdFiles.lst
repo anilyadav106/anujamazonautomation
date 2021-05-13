@@ -1,0 +1,8 @@
+com\nagp\amazon\pages\AmazonHomePage.class
+com\nagp\amazon\pages\AmazonLoginPage.class
+com\nagp\amazon\pages\AmazonShoppingCartPage.class
+com\nagp\amazon\base\TestBase.class
+com\nagp\amazon\extentReportListener\ExtentReportListener.class
+com\nagp\amazon\pages\AmazonProductSearchResultsPage.class
+com\nagp\amazon\pages\AmazonSelectedProductDescriptionPage.class
+com\nagp\amazon\util\TestUtil.class

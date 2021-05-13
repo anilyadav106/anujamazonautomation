@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Application NAGP Selenium Project]">
+  <listeners>
+    <listener class-name="com.amazon.automation.customlisterns.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" name="Amazon Application Test Cases(failed)">
+    <classes>
+      <class name="com.nagp.amazon.tests.AmazonLoginPageTest">
+        <methods>
+          <include name="failedLoginTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- com.nagp.amazon.tests.AmazonLoginPageTest -->
+      <class name="com.nagp.amazon.tests.AmazonHomePageTest">
+        <methods>
+          <include name="enterAndValidateDeliveryAddressPincodeTest"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.nagp.amazon.tests.AmazonHomePageTest -->
+    </classes>
+  </test> <!-- Amazon Application Test Cases(failed) -->
+</suite> <!-- Failed suite [Amazon Application NAGP Selenium Project] -->

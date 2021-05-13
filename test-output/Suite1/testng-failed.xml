@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="none">
+  <listeners>
+    <listener class-name="com.nagp.amazon.extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="Regression1">
+    <classes>
+      <class name="com.nagp.amazon.tests.AmazonLoginPageTest"/>
+      <class name="com.nagp.amazon.tests.AmazonHomePageTest"/>
+      <class name="com.nagp.amazon.tests.AmazonProductSearchResultsPageTest"/>
+    </classes>
+  </test> <!-- Regression1 -->
+  <test name="Regression1(failed)" parallel="none">
+    <classes>
+      <class name="com.nagp.amazon.tests.AmazonProductSearchResultsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.nagp.amazon.tests.AmazonProductSearchResultsPageTest -->
+      <class name="com.nagp.amazon.tests.AmazonLoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.nagp.amazon.tests.AmazonLoginPageTest -->
+      <class name="com.nagp.amazon.tests.AmazonHomePageTest">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="enterAndValidateDeliveryAddressPincodeTest"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.nagp.amazon.tests.AmazonHomePageTest -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
